@@ -12,7 +12,10 @@ namespace RestaurantManager.Models
 
         public List<Order> OrderItems
         {
-            get { return this.orderItems; }
+            get
+            {
+                return this.orderItems;
+            }
             set
             {
                 if(value != orderItems)

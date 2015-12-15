@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace RestaurantManager.Models
 {
-    public class MenuItem
+    public class MenuItem : IComparable<MenuItem>
     {
         [Key]
         public int Id { get; set; }
@@ -14,6 +15,11 @@ namespace RestaurantManager.Models
         public override string ToString()
         {
             return this.Title;
+        }
+
+        public int CompareTo(MenuItem other)
+        {
+            return this.Title.CompareTo(other.Title);
         }
     }
 }

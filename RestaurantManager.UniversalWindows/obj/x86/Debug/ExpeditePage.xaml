@@ -23,7 +23,7 @@
     <Page.TopAppBar>
         
         <AppBar>
-            <AppBarButton Label="Home" Click="MainPage_Click">
+            <AppBarButton x:ConnectionId='1' Label="Home"                       >
                 <AppBarButton.Icon>
                     <SymbolIcon Symbol="Home" />
                 </AppBarButton.Icon>
@@ -69,3 +69,4 @@
 
     </Grid>
 </Page>
+

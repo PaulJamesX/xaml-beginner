@@ -5,14 +5,14 @@ using System.Linq;
 
 namespace RestaurantManager.Models
 {
-    public class Order
+    public class Order : IComparable<Order>
     {
         [Key]
         public int Id { get; set; }
 
         public string SpecialRequests { get; set; }
 
-        public List<MenuItem> Items { get; set; }
+        public List<MenuItem> Items{ get; set; }
 
         public Table Table { get; set; }
 
@@ -22,8 +22,12 @@ namespace RestaurantManager.Models
 
         public override string ToString()
         {
-            return Table.ToString();
-            //return String.Join(", ", Items.Select(i => i.Title));
+            return String.Join(", ", Items.Select(i => i.Title));
+        }
+
+        public int CompareTo(Order other)
+        {
+            return this.Table.Description.CompareTo(other.Table.Description);
         }
     }
 }
