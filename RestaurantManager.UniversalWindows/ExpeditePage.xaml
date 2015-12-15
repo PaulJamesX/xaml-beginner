@@ -10,7 +10,18 @@
     <Page.DataContext>
         <models:ExpediteDataManager />
     </Page.DataContext>
+
+    <Page.Resources>
+
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Green" />
+        </Style>
+
+    </Page.Resources>
+    
     <Page.TopAppBar>
+        
         <AppBar>
             <AppBarButton Label="Home" Click="MainPage_Click">
                 <AppBarButton.Icon>
@@ -18,15 +29,40 @@
                 </AppBarButton.Icon>
             </AppBarButton>
         </AppBar>
+        
     </Page.TopAppBar>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.05*"/>
-            <RowDefinition Height="0.85*"/>
-            <RowDefinition Height="0.10*"/>
-        </Grid.RowDefinitions>
-        <GridView Grid.Row="1" ItemsSource="{Binding OrderItems}">
-        </GridView>
-        <Button Content="Clear All Orders" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" />
+
+        <ListBox ItemsSource="{Binding OrderItems}" Width="Auto" Height="Auto">
+            
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Width="300" Margin="5" BorderBrush="AliceBlue" BorderThickness="2" Padding="5" CornerRadius="0,50,0,50" >
+                        
+                        <TextBlock Grid.Row="0" Text="{Binding Table.Description}" Width="Auto" Height="30" Style="{ThemeResource TitleTextBlockStyle}"/>
+
+                        <ListBox ItemsSource="{Binding Items}" MinHeight="200" x:Name="OrderedItems">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Title}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        
+                        <Button Content="Delete" HorizontalAlignment="Right"/>
+                        
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            
+        </ListBox>
+
     </Grid>
 </Page>

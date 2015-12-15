@@ -6,6 +6,82 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+
+    <Page.Resources>
+        <ControlTemplate x:Key="RoundButton" TargetType="Button">
+
+            <Grid>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualStateGroup.Transitions>
+                            <VisualTransition To="MouseOver" GeneratedDuration="0:0:0.5" />
+                        </VisualStateGroup.Transitions>
+
+                        <VisualState x:Name="Normal"/>
+
+                        <VisualState x:Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimation Duration="1" Storyboard.TargetName="borderColor" Storyboard.TargetProperty="Color" To="Cyan"/>
+                            </Storyboard>
+                        </VisualState>
+
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <ColorAnimation Duration="1" Storyboard.TargetName="borderColor" Storyboard.TargetProperty="Color" To="Red"/>
+                            </Storyboard>
+                        </VisualState>
+
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+
+                <Ellipse>
+                    <Ellipse.Fill>
+                        <SolidColorBrush x:Name="borderColor" Color="Black"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+
+                <Ellipse x:Name="defaultOutline" Stroke="Yellow" StrokeThickness="2" Margin="2"/>
+
+                <Ellipse x:Name="ButtonShape" Margin="5" Width="160" Height="160" Fill="{TemplateBinding Background}"/>
+
+                <ContentPresenter HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"
+                                  FontSize="18"/>
+
+            </Grid>
+
+        </ControlTemplate>
+
+        <Style TargetType="Button" x:Key="ButtonStyle">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="Red" />
+        </Style>
+        
+        <!-- THIS ALSO WORKS AS A STYLE
+        <Style x:Key="RoundButton" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="180" x:Name="RootGrid" Background="{TemplateBinding Background}">
+                            <ContentPresenter x:Name="ContentPresenter" 
+                                              AutomationProperties.AccessibilityView="Raw" 
+                                              BorderBrush="{TemplateBinding BorderBrush}" 
+                                              BorderThickness="{TemplateBinding BorderThickness}" 
+                                              ContentTemplate="{TemplateBinding ContentTemplate}" 
+                                              ContentTransitions="{TemplateBinding ContentTransitions}" 
+                                              Content="{TemplateBinding Content}" 
+                                              HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                              Padding="20" 
+                                              VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        -->
+    </Page.Resources>
+
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.40*" />
@@ -16,10 +92,10 @@
             <ColumnDefinition Width="0.50*" />
             <ColumnDefinition Width="0.50*" />
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Restaurant Manager" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
-        <TextBlock Text="Internal Test Version" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
-        <Button x:ConnectionId='1' Content="Go to Orders View" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0"                            />
-        <Button x:ConnectionId='2' Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"                         />
+        <TextBlock Text="Restaurant Manager" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{ThemeResource HeaderTextBlockStyle}"/>
+        <TextBlock Text="Internal Test Version" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Style="{ThemeResource SubheaderTextBlockStyle}"/>
+        <Button x:ConnectionId='1' Content="Go to Orders View" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0"                            Template="{StaticResource RoundButton}" Style="{StaticResource ButtonStyle}" />
+        <Button x:ConnectionId='2' Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"                         Template="{StaticResource RoundButton}" Style="{StaticResource ButtonStyle}"/>
     </Grid>
 </Page>
 

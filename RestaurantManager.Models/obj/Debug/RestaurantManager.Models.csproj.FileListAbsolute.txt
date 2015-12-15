@@ -18,7 +18,6 @@ C:\Users\Sidne\Desktop\xaml-solutions\course-2\mod2hw_solution\RestaurantManager
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\bin\Debug\RestaurantManager.Models.dll
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\bin\Debug\RestaurantManager.Models.pdb
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\bin\Debug\RestaurantManager.Models.pri
-C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\RestaurantManager.Models.csprojResolveAssemblyReference.cache
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\RestaurantManager.Models.dll
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\RestaurantManager.Models.pdb
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\priconfig.xml
@@ -32,3 +31,4 @@ C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\pri.re
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\qualifiers.txt
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\qualifiers.txt.intermediate
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Models\obj\Debug\RestaurantManager.Models.csprojResolveAssemblyReference.cache
