@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:models="using:RestaurantManager.Models"
+    xmlns:ext="using:RestaurantManager.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -13,6 +14,8 @@
 
     <Page.Resources>
 
+        <ext:BoolToColorConverter x:Key="BooleanToColorConverter"/>
+        
         <Style TargetType="Button">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Background" Value="Green" />
@@ -59,7 +62,11 @@
 
                         <TextBlock Text="{Binding SpecialRequests}"/>
 
-                        <Button Content="Delete" HorizontalAlignment="Right"/>
+                        <Button Content="Delete" HorizontalAlignment="Right">
+                            <Button.Background>
+                                <SolidColorBrush Color="{Binding Expedite, Converter={StaticResource BooleanToColorConverter}}"/>
+                            </Button.Background>
+                        </Button>
                         
                     </StackPanel>
                 </DataTemplate>
