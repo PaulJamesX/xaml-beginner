@@ -1,9 +1,6 @@
 ﻿using RestaurantManager.Models;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
 using Windows.UI.Popups;
-using Windows.UI.Xaml.Controls;
 
 namespace RestaurantManager.ViewModels
 {
@@ -70,6 +67,7 @@ namespace RestaurantManager.ViewModels
             Order order = new Order { SpecialRequests = specialRequest, Items = this.CurrentlySelectedMenuItems, Table = base.Repository.Tables[0] };
             base.Repository.AddOrder(order);
             new MessageDialog("Order Added", "New Order").ShowAsync();
+            
         }
 
         #endregion

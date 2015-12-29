@@ -36,8 +36,14 @@
     </Page.TopAppBar>
     
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <ListBox ItemsSource="{Binding OrderItems}" Width="Auto" Height="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <ProgressRing IsActive="{Binding IsLoading}" Height="100" Width="100" Grid.Row="0"/>
+        
+        <ListBox ItemsSource="{Binding OrderItems}" Width="Auto" Height="Auto" Grid.Row="1">
             
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>

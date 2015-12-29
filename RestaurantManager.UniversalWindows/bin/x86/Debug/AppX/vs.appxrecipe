@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-29T01:54:58.213</Modified>
+      <Modified>2015-12-29T12:39:07.193</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.UniversalWindows.exe">
       <PackagePath>entrypoint\RestaurantManager.UniversalWindows.exe</PackagePath>
-      <Modified>2015-12-29T01:54:57.305</Modified>
+      <Modified>2015-12-29T12:39:05.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -460,7 +460,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.ViewModels\bin\Debug\RestaurantManager.ViewModels.dll">
       <PackagePath>RestaurantManager.ViewModels.dll</PackagePath>
-      <Modified>2015-12-29T01:54:54.243</Modified>
+      <Modified>2015-12-29T12:10:50.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\Assets\LargeSquareLogo.png">
       <PackagePath>Assets\LargeSquareLogo.png</PackagePath>
@@ -489,7 +489,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.UniversalWindows.xr.xml">
       <PackagePath>RestaurantManager.UniversalWindows.xr.xml</PackagePath>
-      <Modified>2015-12-29T01:52:33.409</Modified>
+      <Modified>2015-12-29T12:38:36.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-29T01:52:35.513</Modified>
+      <Modified>2015-12-29T12:39:06.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\RestaurantManager.UniversalWindows.exe">
       <PackagePath>RestaurantManager.UniversalWindows.exe</PackagePath>
-      <Modified>2015-12-29T01:54:58.212</Modified>
+      <Modified>2015-12-29T12:39:07.191</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
