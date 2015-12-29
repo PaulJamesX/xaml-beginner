@@ -1,16 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using RestaurantManager.Models;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
-namespace RestaurantManager.Models
+namespace RestaurantManager.ViewModels
 {
-    public class ExpediteDataManager : DataManager
+    public class ExpediteViewModel : ViewModel
     {
         #region Field Members
-        List<Order> orderItems;
+        ObservableCollection<Order> orderItems;
         #endregion
 
         #region Properties
 
-        public List<Order> OrderItems
+        public ObservableCollection<Order> OrderItems
         {
             get
             {

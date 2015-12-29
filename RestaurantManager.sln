@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.Models", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.Extensions", "RestaurantManager.Extensions\RestaurantManager.Extensions.csproj", "{E3C5C08B-4023-4F3D-B8FA-1EDD3374BEAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.ViewModels", "RestaurantManager.ViewModels\RestaurantManager.ViewModels.csproj", "{D82119F3-E758-4A3A-9423-0A41FF8F94B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,22 @@ Global
 		{E3C5C08B-4023-4F3D-B8FA-1EDD3374BEAB}.Release|x64.Build.0 = Release|x64
 		{E3C5C08B-4023-4F3D-B8FA-1EDD3374BEAB}.Release|x86.ActiveCfg = Release|x86
 		{E3C5C08B-4023-4F3D-B8FA-1EDD3374BEAB}.Release|x86.Build.0 = Release|x86
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Debug|ARM.Build.0 = Debug|ARM
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Debug|x64.ActiveCfg = Debug|x64
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Debug|x64.Build.0 = Debug|x64
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Debug|x86.ActiveCfg = Debug|x86
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Debug|x86.Build.0 = Debug|x86
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Release|ARM.ActiveCfg = Release|ARM
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Release|ARM.Build.0 = Release|ARM
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Release|x64.ActiveCfg = Release|x64
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Release|x64.Build.0 = Release|x64
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Release|x86.ActiveCfg = Release|x86
+		{D82119F3-E758-4A3A-9423-0A41FF8F94B7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

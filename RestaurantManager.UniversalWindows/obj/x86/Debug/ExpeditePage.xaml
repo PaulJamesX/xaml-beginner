@@ -3,13 +3,13 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
-    xmlns:models="using:RestaurantManager.Models"
+    xmlns:vm="using:RestaurantManager.ViewModels"
     xmlns:ext="using:RestaurantManager.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.DataContext>
-        <models:ExpediteDataManager />
+        <vm:ExpediteViewModel />
     </Page.DataContext>
 
     <Page.Resources>
@@ -64,10 +64,17 @@
 
                         <Button Content="Delete" HorizontalAlignment="Right">
                             <Button.Background>
-                                <SolidColorBrush Color="{Binding Expedite, Converter={StaticResource BooleanToColorConverter}}"/>
+                                <SolidColorBrush >
+                                    <SolidColorBrush.Color>
+                                        <Binding Path="Expedite">
+                                            <Binding.Converter>
+                                                <ext:BoolToColorConverter TrueColor="Red" FalseColor="Green"/>
+                                            </Binding.Converter>
+                                        </Binding>
+                                    </SolidColorBrush.Color>
+                                </SolidColorBrush>
                             </Button.Background>
                         </Button>
-                        
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

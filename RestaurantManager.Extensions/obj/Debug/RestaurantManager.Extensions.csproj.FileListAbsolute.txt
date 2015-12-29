@@ -16,4 +16,3 @@ C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Extensions\obj\Debug\pr
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Extensions\obj\Debug\qualifiers.txt
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Extensions\obj\Debug\qualifiers.txt.intermediate
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Extensions\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.Extensions\obj\Debug\RestaurantManager.Extensions.csprojResolveAssemblyReference.cache

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RestaurantManager.Models
 {
-    public class MenuItem : IComparable<MenuItem>
+    public class MenuItem : IComparable<MenuItem>, IEquatable<MenuItem>
     {
         [Key]
         public int Id { get; set; }
@@ -20,6 +20,11 @@ namespace RestaurantManager.Models
         public int CompareTo(MenuItem other)
         {
             return this.Title.CompareTo(other.Title);
+        }
+
+        public bool Equals(MenuItem other)
+        {
+            return this.Title == other.Title;
         }
     }
 }

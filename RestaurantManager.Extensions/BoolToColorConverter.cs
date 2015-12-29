@@ -6,14 +6,17 @@ namespace RestaurantManager.Extensions
 {
     public class BoolToColorConverter : IValueConverter
     {
+        public Color TrueColor { get; set; }
+        public Color FalseColor { get; set; }
+
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            Color rv = Colors.Transparent;
+            Color return_value = Colors.Transparent;
             if (value is bool)
             {
-                rv = (bool)value ? Colors.Red : Colors.Green;
+                return_value = (bool)value ? TrueColor : FalseColor;
             }
-            return rv;
+            return return_value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

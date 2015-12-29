@@ -146,6 +146,10 @@
       <Project>{7ea2b405-e454-4f0c-a8c3-d6bf3f814f5c}</Project>
       <Name>RestaurantManager.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RestaurantManager.ViewModels\RestaurantManager.ViewModels.csproj">
+      <Project>{d82119f3-e758-4a3a-9423-0a41ff8f94b7}</Project>
+      <Name>RestaurantManager.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">

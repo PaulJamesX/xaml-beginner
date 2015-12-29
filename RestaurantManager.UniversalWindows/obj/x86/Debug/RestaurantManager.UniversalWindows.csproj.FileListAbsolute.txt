@@ -573,10 +573,13 @@ C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x8
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\System.Xml.XmlSerializer.dll
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.Extensions.dll
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.Models.dll
+C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.ViewModels.dll
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.Extensions.pdb
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.Extensions.pri
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.Models.pdb
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.Models.pri
+C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.ViewModels.pdb
+C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.ViewModels.pri
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\obj\x86\Debug\RestaurantManager.UniversalWindows.exe
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\obj\x86\Debug\RestaurantManager.UniversalWindows.pdb
 C:\Courses\edx\DEV206.2x\xaml-beginner\RestaurantManager.UniversalWindows\obj\x86\Debug\ResourceHandlingTask.state

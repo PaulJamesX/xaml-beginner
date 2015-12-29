@@ -1,18 +1,20 @@
-﻿using System;
+﻿using RestaurantManager.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantManager.Models
+namespace RestaurantManager.ViewModels
 {
     public sealed class RestaurantContext
     {
         public List<Table> Tables { get; private set; }
 
-        public List<MenuItem> StandardMenuItems { get; private set; }
+        public ObservableCollection<MenuItem> StandardMenuItems { get; private set; }
 
-        public List<Order> Orders { get; private set; }
+        public ObservableCollection<Order> Orders { get; private set; }
 
         public async Task InitializeContextAsync()
         {
@@ -25,7 +27,7 @@ namespace RestaurantManager.Models
                 new Table { Description = "Front Booth" }
             };
 
-            this.StandardMenuItems = new List<MenuItem>
+            this.StandardMenuItems = new ObservableCollection<MenuItem>
             {
                 new MenuItem { Title = "French Bread & Fondue Dip", Price = 5.75m },
                 new MenuItem { Title = "Curried Chicken and Rice", Price = 9.00m },
@@ -39,19 +41,25 @@ namespace RestaurantManager.Models
                 new MenuItem { Title = "Mashed Peas", Price = 3.25m }
             };
 
-            this.Orders = new List<Order>
+            this.Orders = new ObservableCollection<Order>
             {
-                new Order { Complete = false, Expedite = true, SpecialRequests = "Allergic to Shellfish", Table = this.Tables.Last(), Items = new List<MenuItem> { this.StandardMenuItems.First() } },
-                new Order { Complete = false, Expedite = false, SpecialRequests = String.Empty, Table = this.Tables.First(), Items = new List<MenuItem> { this.StandardMenuItems.Last(), this.StandardMenuItems.First() } },
+                new Order { Complete = false, Expedite = true, SpecialRequests = "Allergic to Shellfish", Table = this.Tables.Last(), Items = new ObservableCollection<MenuItem> { this.StandardMenuItems.First() } },
+                new Order { Complete = false, Expedite = false, SpecialRequests = String.Empty, Table = this.Tables.First(), Items = new ObservableCollection<MenuItem> { this.StandardMenuItems.Last(), this.StandardMenuItems.First() } },
             };
 
 
             // SORT
-            this.Orders.Sort();
+            //this.Orders.Sort();
 
-            foreach(Order order in this.Orders){
-                order.Items.Sort();
-            }
+            //foreach(Order order in this.Orders){
+            //    order.Items.Sort();
+            //}
+        }
+
+        public bool AddOrder(Order order)
+        {
+            this.Orders.Add(order);
+            return true;
         }
     }
 }
